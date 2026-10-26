@@ -1,0 +1,1 @@
+"""Visual and data components."""

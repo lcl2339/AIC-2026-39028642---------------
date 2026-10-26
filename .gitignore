@@ -1,0 +1,56 @@
+
+# ==========================================
+# AIC2026 半决赛 - Git 忽略规则
+# ==========================================
+
+# 1. 个人工具配置与敏感信息
+/.aws/
+/.codex/
+/.agents/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 2. Python 环境和缓存
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# 3. 官方数据集和数据索引
+/AIC-2026-39028642-代码与数据/data/*
+!/AIC-2026-39028642-代码与数据/data/数据集放置说明.md
+
+# 4. 预训练模型及模型权重
+/AIC-2026-39028642-代码与数据/resources/weights/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# 5. 训练缓存与中间产物
+/AIC-2026-39028642-代码与数据/training/visual/cache/
+*.npy
+*.npz
+*.pkl
+
+# 6. 压缩包
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# 7. 日志及临时输出
+*.log
+tmp/
+outputs/
+checkpoints/
+runs/
+
+# 8. 编辑器本地缓存
+.idea/
+.DS_Store
